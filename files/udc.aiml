@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<category>
+  <pattern>*</pattern>
+  <template>I have no answer for that. Please ask me about assignments, due dates, course materials, or instructor contact information.</template>
+</category>
+
+<category>
+  <pattern>HELLO</pattern>
+  <template>Hi! I am your AI class helper. How can I help you today?</template>
+</category>
+
+<category>
+  <pattern>HI</pattern>
+  <template>Hello! I can help with common course questions.</template>
+</category>
+
+<category>
+  <pattern>HEY</pattern>
+  <template>Hey! Ask me about assignments, due dates, or course materials.</template>
+</category>
+
+<category>
+  <pattern>MY NAME IS *</pattern>
+  <template>Nice to meet you, <set name="username"><star/></set>! How can I help you today?</template>
+</category>
+
+<category>
+  <pattern>WHAT IS MY NAME</pattern>
+  <template>Your name is <get name="username"/>.</template>
+</category>
+
+<category>
+  <pattern>HOW ARE YOU</pattern>
+  <template>
+    <random>
+      <li>I am doing well today.</li>
+      <li>I am ready to help you with your class questions.</li>
+      <li>I am doing great. What do you need help with?</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>WHEN IS THE ASSIGNMENT DUE</pattern>
+  <template>Please check Canvas for the exact due date listed under the assignment page and module calendar.</template>
+</category>
+
+<category>
+  <pattern>WHERE DO I SUBMIT MY ASSIGNMENT</pattern>
+  <template>You should submit your work through the assignment submission link on Canvas.</template>
+</category>
+
+<category>
+  <pattern>WHERE CAN I FIND THE COURSE MATERIALS</pattern>
+  <template>You can find course materials in the course modules on Canvas.</template>
+</category>
+
+<category>
+  <pattern>HOW DO I CONTACT THE INSTRUCTOR</pattern>
+  <template>You can usually contact the instructor through Canvas inbox or the contact information listed in the syllabus.</template>
+</category>
+
+<category>
+  <pattern>WHERE IS THE RUBRIC</pattern>
+  <template>The rubric is usually attached to the assignment page on Canvas. Check the submission page carefully.</template>
+</category>
+
+<category>
+  <pattern>I NEED HELP</pattern>
+  <template>If you need help, review the assignment instructions, check the syllabus, or contact your instructor or TA.</template>
+</category>
+
+</aiml>
